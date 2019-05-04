@@ -15,4 +15,6 @@ VOLUME /var/grok/
 
 EXPOSE 9144
 
-CMD ["/grok/grok_exporter", "-config", "/grok/config.yml"]
+ENTRYPOINT ["/grok/grok_exporter", "-config", "/grok/config.yml"]
+# tail the log as loop
+CMD ["tail", "-f" "/var/log/grok.log"]
