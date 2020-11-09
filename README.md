@@ -14,3 +14,4 @@ You need to provide [`grok_exporter`] with a config file in order to function pr
 
 There are various ways in which you can utilize this image, each however assumes that the log file you're trying to parse is reacheable by the grok_exporter container.
 
+@see https://github.com/fstab/grok_exporter
